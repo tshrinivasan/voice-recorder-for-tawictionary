@@ -90,8 +90,8 @@ def upload_file(file):
 	move_file(file)
 		
 for photo in listing:
-	print photo
-	print filetype(photo)
+#	print photo
+#`	print filetype(photo)
 	if filetype(photo) in ['JPG','jpg','GIF','gif','png','PNG','ogg','OGG']:
 		upload_file(photo)
 				
