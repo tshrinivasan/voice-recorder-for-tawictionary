@@ -4,4 +4,3 @@ sudo apt-get install  vorbis-tools
 
 sudo pip install wikitools
 sudo pip install poster
-sudo pip install pyexiv2
