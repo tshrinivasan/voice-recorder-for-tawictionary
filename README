@@ -42,6 +42,39 @@ see in action.
 Tamil - http://www.youtube.com/watch?v=7a5Iv_ol1So
 English - http://www.youtube.com/watch?v=zd4KNbNX4_Y
 
+
+
+INSTALL:
+========
+
+Read the INSTALL file for installing in ubuntu 14.04 and above or mac.
+
+
+How to Execute:
+==============
+
+1. Fill the words you want to recoed in a textfile named "file"
+2. run the below command
+
+python voice-record.py 2> err
+
+this will record the sounds in ogg and wav formats.
+
+3.
+To upload all the ogg files to Wikimedia Commons
+
+3a. Edit the file mediawiki-uploader.py 
+Fill the commons api url, username and password
+
+3b. run the below command
+python mediawiki-uploader.py
+
+
+
+
+
+
+
 Todo:
 
 Link back to the tamil wiktionary page is still pending.
@@ -55,6 +88,7 @@ Contact:
 Shrinivasan T
 tshrinivasan@gmail.com
 http://goinggnu.wordpress.com
+
 
 
 

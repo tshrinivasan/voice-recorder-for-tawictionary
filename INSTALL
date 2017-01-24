@@ -1,0 +1,32 @@
+To install this on ubuntu 14.04 and above
+=========================================
+
+git clone https://github.com/tshrinivasan/voice-recorder-for-tawictionary.git
+
+cd voice-recorder-for-tawictionary
+
+sh ./install.sh
+
+
+
+To Install this on mac
+======================
+
+git clone https://github.com/tshrinivasan/voice-recorder-for-tawictionary.git
+
+cd voice-recorder-for-tawictionary
+
+
+
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
+
+brew install portaudio
+
+brew install vorbis-tools
+
+sudo easy_install pip
+
+sudo pip install pyaudio
+
+
+

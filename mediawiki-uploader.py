@@ -1,6 +1,5 @@
 import wikitools
 import poster
-import pyexiv2
 import os
 import shutil
 
@@ -36,18 +35,6 @@ def filetype(file):
 def filename(file):
 	return file.split(".")[-2]
 
-
-def get_file_details(image):
-	try:
-		metadata = pyexiv2.ImageMetadata(image)
-		metadata.read()
-		file_name=metadata['Iptc.Application2.Headline'].raw_value[0].strip()
-		caption=metadata['Iptc.Application2.Caption'].raw_value[0].strip()
-		file_meta = {'name':file_name,'caption':caption}
-		return file_meta
-	except:
-		print "No tag is set for the image " + image	
-		exit	
 
 	
 def move_file(file):
@@ -90,8 +77,6 @@ def upload_file(file):
 	move_file(file)
 		
 for photo in listing:
-#	print photo
-#`	print filetype(photo)
 	if filetype(photo) in ['JPG','jpg','GIF','gif','png','PNG','ogg','OGG']:
 		upload_file(photo)
 				

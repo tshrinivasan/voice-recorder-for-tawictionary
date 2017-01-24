@@ -52,14 +52,22 @@ def process_word():
 		
 		subprocess.call(["oggenc", '-Q', word + '.wav'])
 
+
+	        play_confirm = raw_input("\nDo you hear the recorded word:   " + word + " ?  Y/N : ")
+        	play_confirm = play_confirm.lower()
+
+        	if play_confirm == 'y':
+                	print ("\nPlaying the recorded word: " + word)
+                	os.system("ogg123 " + word + ".ogg")
+
+        	elif play_confirm == 'n':
+                	print "\nHope the word is recorded well."
+
+		#play_confirm = "n"
 		
 	if confirm == 'n':
 	
 		process_word()
-#	process_next_word()
-
-
-
 
 
 
